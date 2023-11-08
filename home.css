@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fascinate&family=Fascinate+Inline&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+
+    background-image: url(bg-1-01-01.png);
+    background-size: 1760px;
+    background-repeat: no-repeat;
+    
+} 
+
+
+
+#game-head{
+    margin-top: 160px;
+    margin-left: 250px;
+    height: 100px;
+    width: 950px;
+    border: 1px solid black;
+}
+
+.head{
+    letter-spacing: 18px;
+    font-size: 80px;
+    color: #fec701;
+    text-shadow: -3px 3px 0px #fec701;
+    position: relative;
+    left: 3px;
+    color: #282828;
+
+}
+
+.buttons{
+    margin-top: 40px;
+    margin-left: 535px;
+    /* border: 1px solid black; */
+    width: 380px;
+    height: 420px;
+}
+
+.button{
+    height: 90px;
+    width: 380px;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.start-button{
+    box-shadow: -6px 6px 0px 0px #fec701;
+    background-color: #282828;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.start-button:hover{
+    background-color: white;
+    color: #282828;
+    border: 2px solid #282828;
+}
+
+
+.start{
+    text-decoration: none;
+    color: white;
+}
+
+.start:hover{
+    text-decoration: none;
+    color: #282828;
+}
+
+.sub-button{
+    text-decoration: none;
+    color: #282828;
+    transition: box-shadow 0.3s;
+}
+
+.sub-button:hover{
+    text-decoration: none;
+}
+
+.about-button, .instruction-button{
+    margin-bottom: 17px;
+    font-size: 35px;
+    border: 2px solid #282828;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.about-button:hover, .instruction-button:hover{
+    box-shadow: -6px 6px 5px 0px #d3d3d3;
+    border: 2px solid #282828;
+    background-color: white;
+
+}
+
+.sub-buttons{
+    margin-top: 100px;
+}
+
+
+
+
+
