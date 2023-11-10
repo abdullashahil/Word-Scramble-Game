@@ -59,34 +59,15 @@ body {
 }
 
 .start-button:hover {
+    cursor: pointer;
     background-color: white;
     color: #282828;
     border: 2px solid #282828;
 }
 
-
-.start {
-    text-decoration: none;
-    color: white;
-}
-
-.start:hover {
-    text-decoration: none;
-    color: #282828;
-}
-
-.sub-button {
-    text-decoration: none;
-    color: #282828;
-    transition: box-shadow 0.3s;
-}
-
-.sub-button:hover {
-    text-decoration: none;
-}
-
 .about-button,
 .instruction-button {
+    cursor: pointer;
     margin-bottom: 17px;
     font-size: 35px;
     border: 2px solid #282828;
@@ -96,6 +77,7 @@ body {
 
 .about-button:hover,
 .instruction-button:hover {
+    cursor: pointer;
     box-shadow: -6px 6px 5px 0px #d3d3d3;
     border: 2px solid #282828;
     background-color: white;
@@ -104,6 +86,67 @@ body {
 
 .sub-buttons {
     margin-top: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #game-head {
+        margin-top: 27%; 
+        margin-left: 21vw; 
+        width: 60%;
+        height: 20%; 
+    }
+
+    .head {
+        text-align: center;
+        line-height: 60px;
+        letter-spacing: 1vw; 
+        font-size: 10vw; 
+        left: 0.5vw; 
+    }
+
+    .buttons {
+        margin-top: 7%; 
+        margin-left: 19vw; 
+        width: 5%; 
+
+    }
+
+    .button .about-button .instruction-button {
+        font-size: 3vw; 
+        height: 10%;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    #game-head {
+        margin-top: 17%; 
+        margin-left: 21vw; 
+        width: 60%;
+        height: 20%; 
+    }
+
+    .head {
+        text-align: center;
+        line-height: 85px;
+        letter-spacing: 1vw; 
+        font-size: 10vw; 
+        left: 0.5vw; 
+    }
+
+    .buttons {
+        margin-top: 7%; 
+        margin-left: 22vw; 
+        width: 80%; 
+
+    }
+
+    .button, .about-button, .instruction-button {
+        font-size: 3vw; 
+        height: 10%;
+    }
 }
 
 

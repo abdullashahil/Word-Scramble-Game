@@ -22,7 +22,6 @@ body{
     margin-left: 100px;
     height: 100px;
     width: 950px;
-    /* border: 1px solid black; */
 }
 
 .head{
@@ -37,7 +36,6 @@ body{
 }
 
 ul{
-    /* border: 1px solid black; */
     width: 1200px;
     margin-left: 125px;
     text-align: left;
@@ -67,6 +65,7 @@ button{
 }
 
 button:hover{
+    cursor: pointer;
     margin-bottom: 17px;
     border: none;
     color: white;

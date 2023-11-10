@@ -34,6 +34,7 @@ body{
     border-radius: 0px 0px 30px 30px;
     width: 570px;
     height: 450px;
+    overflow: hidden;
 }
 
 input{
@@ -80,6 +81,7 @@ button{
     color: #282828;
     background-color: white;
     border: 1px solid #282828;
+    cursor: pointer;
 }
 
 .check-button{
@@ -89,36 +91,63 @@ button{
 }
 
 .check-button:hover{
-    color:#282828;
+    cursor: pointer;
     background-color: white;
     border: 1px solid #282828;
 }
 
 
 .time-box{
+    color: rgb(60, 60, 60);
     margin-top: 20px;
-    margin-left: 477px;
+    margin-right: 30px;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    border: 1px solid #282828;
+    border: .5px solid #282828;
     border-radius: 15px;
     width: 70px;
 }
-
-.word-box{
+.score-box{
+    color: rgb(60, 60, 60);
     margin-top: 20px;
-    /* border: 1px solid black; */
+    margin-left: 30px;
     text-align: center;
-    letter-spacing: 30px;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
+    border: .5px solid #282828;
+    border-radius: 15px;
+    width: 230px;
 }
 
-.hint{
+.score-time{
+    /* border: 1px solid black; */
+    width: 570px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#word{
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 35px;
+    width: 500px;
+    text-align: center;
+    letter-spacing: 28px;
+    font-size: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+    /* border: 1px solid black; */
+
+}
+
+
+#hint{
     height: 30px;
     width: 501px;
-    /* border: 1px solid black; */
     font-size: 20px;
     margin-top: 20px;
     margin-left: 34px;
@@ -126,24 +155,30 @@ button{
 }
 
 .word-input{
+    text-transform: uppercase;
     width: 480px;
     margin-left: 33px;
 }
 
-.to-reset{
-    text-decoration: none;
-    color: white;
+
+.all{
+    height: fit-content;
+    width: fit-content;
 }
 
-.to-reset:hover{
-    color: #282828;
-}
 
-.to-check{
-    text-decoration: none;
-    color: #282828;
-}
 
-.to-check:hover{
-    color: #282828;
+@media screen and (max-width: 600px){
+
+    .all{
+        transform: scale(0.8);
+        width: fit-content;
+        height: min-content;
+        margin-top: 20%;
+    }
+
+    .head, .box{
+        margin: 0;
+    }
+
 }
